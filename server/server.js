@@ -37,7 +37,7 @@ app.get('/api/logout', (req,res) => {
 
 app.get('/api/posts', PostsCtrl.read)
 
-app.get('/api/posts', PostsCtrl.create)
+app.post('/api/posts', PostsCtrl.create)
 
 app.listen(port, () => {
   console.log('listening on port:', port);
